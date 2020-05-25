@@ -20,9 +20,18 @@
     <h1>Olá mundo!</h1>
     <p>Já mel livrei da maldição!</p>
     <script>
-        window.alert('Meu primeiro alerta!')
-        window.confirm('Está gostando do curso?')
-        window.prompt('Qual é o seu nome?')
+        var nome = window.prompt('Qual é o seu nome?')
+        //comentário de uma linha
+        /* Aqui temos um exemplo de
+            comentários em várias linhas*/
+            window.alert('Olá, '+ nome + '. prazer em te conhecer.')
+            var opcao = window.prompt(nome + ', está gostando do curso?')
+            if (opcao) {
+                window.alert('Que bom que está gostando, ' + nome)
+            }
+            else {
+                window.alert('Que pena, ' + nome + '!. Vamos tentar melhorar!')
+            }
     </script>
 </body>
 </html>
