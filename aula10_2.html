@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        h1 {
+            font: normal 22pt Arial;
+            color: rgb(236, 5, 5);
+            background-color: darkblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        input {
+            font: normal 18pt Arial;
+        }
+
+        input#somar {
+            font: normal 18pt Arial;
+        }
+
+        div#calculadora {
+            width: 400px;
+            height: 280px;
+            background-color: cornflowerblue;
+        }
+        
+        div#inputs {
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        div#res {
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="calculadora">
+    <h1>Calculadora JS</h1>
+    <div id="inputs">
+        <input type="number" name="txtN1" id="txtN1" min="0" max="999" size="3">
+        +
+        <input type="number" name="txtN2" id="txtN2" min="0" max="999" size="3">
+        <input type="button" id="somar" value="somar" onclick="somar()">
+    </div>
+    <div id="res">Resultado...</div>
+    </div>
+     <script>
+        function somar() {
+            var n1 = window.document.getElementById('txtN1')
+            var n2 = window.document.getElementById('txtN2')
+            var result = window.document.getElementById('res')
+            var valor1 = Number(n1.value)
+            var valor2 = Number(n2.value)
+            var soma = valor1 + valor2
+            result.innerHTML = `A soma entre ${valor1} e ${valor2} é: <strong>${soma}</strong>`
+        }
+    </script>
+</body>
+</html>
