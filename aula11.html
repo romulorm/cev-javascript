@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar eletrônico - PRF</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        h1 {
+            font: normal 22pt Arial;
+            color: rgb(193, 230, 30);
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            margin-top: 0px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        input {
+            font: normal 18pt Arial;
+        }
+
+        input#somar {
+            font: normal 18pt Arial;
+        }
+
+        div#radar {
+            width: 400px;
+            height: 440px;
+            background-color: rgb(248, 224, 9);
+        }
+        
+        div#inputs {
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+
+        div#res {
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="radar">
+    <h1>Radar eletrônico - PRF</h1>
+    <p><strong>Velocidade medida:</strong></p>
+    <div id="inputs">
+        <input type="number" name="txtvel" id="txtvel" min="0" max="999" size="3">
+        <input type="button" id="Calcular" value="calcular" onclick="calcular()">
+    </div>
+    <div id="res"><p>Resultado...</p></div>
+    </div>
+     <script>
+        function calcular() {
+            var vel = window.document.getElementById('txtvel')
+            var result = window.document.getElementById('res')
+            var velocidade = Number(vel.value)
+            var limite = 80
+            var tolerancia = 1.1
+            result.innerHTML = `<p>A velocidade medida foi <strong>${velocidade}</strong> km/h.</p>`
+            if (velocidade > limite * tolerancia) {
+                result.innerHTML += `<p>Você foi <strong>MULTADO</strong>! Respeite a velocidade da via de ${limite} km/h.</p>`
+            }
+            result.innerHTML += `<p>Dirija com resposabilidade e use o cinto de segurança.</p>`
+        }
+    </script>
+</body>
+</html>
