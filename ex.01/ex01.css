@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto' sans-serif;
+    font-size: 18pt;
+}
+
+header#cabecalho h1 {
+    text-align: center;
+    font-family: 'Roboto' sans-serif;
+    font-size: 22pt;
+    color: white;
+}
+
+section#corpo {
+    margin-left: 60px;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+div#foto {
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: 12pt;
+}
