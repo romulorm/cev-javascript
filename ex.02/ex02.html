@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Verificador de idade 1.0</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="ex02.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="cabecalho">
+            <h1>Verificador de idade 1.0</h1>
+        </header>
+        <section id="corpo">
+            <div id="entrada">
+                <p><strong>Ano de nascimento:</strong>
+                    <input type="number" name="dataNasc" id="dataNasc" min="1900">
+                </p> 
+                <p><strong>Sexo:</strong>
+                    <input type="radio" name="radSexo" id="idMasc"/><label for="idMasc">Masculino</label>
+                    <input type="radio" name="radSexo" id="idFem"/><label for="idFem">Feminino</label>
+                </p>
+                <p><input type="button" value="Verificar" onclick="verificar()"></p>
+            </div>
+            <div id="saida">
+                <p id="dados">Preencha os dados acima para ver o resultado!</p>
+                <p><img src="imagens/interrogacao.png" alt="Pessoa detectada" id="imagem" name="imagem"></p>
+            </div>
+        </section>
+        <footer>
+            <p>© Curso em Vídeo 2019</p>
+        </footer>
+    <script src="ex02.js"></script>
+    </body>
+</html>
