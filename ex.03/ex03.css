@@ -27,7 +27,7 @@ section {
 div#entrada {
     margin-top: 20px;
     margin-left: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 div#saida p {
@@ -35,10 +35,6 @@ div#saida p {
     margin-left: 20px;
     margin-bottom: auto;
     text-align: left;
-}
-
-div#saida img {
-    margin-top: 40px;
 }
 
 input {
