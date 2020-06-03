@@ -35,6 +35,7 @@ div#saida p {
     margin-left: 20px;
     margin-bottom: auto;
     text-align: left;
+    padding-bottom: 20px;
 }
 
 input {
