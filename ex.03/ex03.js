@@ -6,13 +6,19 @@ function contar() {
     var f_passo = document.getElementById('passo')
     var passo = f_passo.value
     var res = document.getElementById('dados')
-    if (ini.length == 0 || fim.length == 0 || passo.length == 0) {
-        window.alert('Preencha todos os campos!')
+    if (ini.length == 0 || fim.length == 0 || passo.length == 0 || passo == '0') {
+        window.alert('Verifique os dados informados!')
     } else {
-        res.innerHTML = ""
-        for (var c = Number(ini); c <= Number(fim); c+=Number(passo)) {
-            res.innerHTML += `\u{1f449} ${c}`
-        }
+        res.innerHTML = 'Contando'
+        // contagem crescente
+        if (ini < fim) {
+            for (var c = Number(ini); c <= Number(fim); c+=Number(passo)) {
+                        res.innerHTML += `\u{1f449} ${c}` }
+        } else {
+            // contagem regressiva
+            for (var c = Number(ini); c >= Number(fim); c-=Number(passo)) {
+                res.innerHTML += `\u{1f449} ${c}` }
+            }
         res.innerHTML += `\u{1F6D1}`
-    }
+        }
 }
