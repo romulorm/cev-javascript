@@ -16,7 +16,7 @@ h1 {
 }
 
 section {
-    width: 600px;
+    width: 400px;
     height: auto;
     border-radius: 10px;
     background-color: white;
@@ -27,23 +27,24 @@ section {
 div#entrada {
     margin-top: 20px;
     margin-left: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
-div#saida p {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: auto;
-    text-align: left;
+div#saida {
+    text-align: center;
+    background-color: rgb(18, 90, 158);
 }
 
-div#saida img {
+div#saida select {
     margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 14pt;
 }
 
 input {
-    margin-top: 10px;
-    font-family: 'Roboto' sans-serif;
+    margin-top: 20px;
     font-size: 14pt;
 }
 

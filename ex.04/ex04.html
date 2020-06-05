@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>Contador 1.0</title>
+        <title>Gerador de Tabuada 1.0</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="ex03.css" rel="stylesheet">
+        <link href="ex04.css" rel="stylesheet">
     </head>
     <body>
         <header id="cabecalho">
-            <h1>Contador 1.0</h1>
+            <h1>Gerador de Tabuada 1.0</h1>
         </header>
         <section id="corpo">
             <div id="entrada">
-                <p><strong>Início:</strong>
-                    <input type="number" name="inicio" id="inicio" size="4">
+                <p><strong>Número:</strong>
+                    <input type="number" name="txtNum" id="txtNum" size="4">
+                    <input type="button" value="Gerar!" onclick="gerarTabuada()">
                 </p> 
-                <p><strong>Fim:</strong>
-                    <input type="number" name="fim" id="fim" size="4">
-                </p>
-                <p><strong>Passo:</strong>
-                    <input type="number" name="passo" id="passo" min="1" size="4">
-                </p>
-                <p><input type="button" value="Contar!" onclick="contar()"></p>
             </div>
             <div id="saida">
-                <p id="dados">Preencha os dados acima para ver o resultado!</p>
+                <select name="tabuada" id="seltab" size="10">
+                    <option>Digite um número acima</option>
+                </select>
             </div>
         </section>
         <footer>
             <p>© Curso em Vídeo 2019</p>
         </footer>
-    <script src="ex03.js"></script>
+    <script src="ex04.js"></script>
     </body>
 </html>
