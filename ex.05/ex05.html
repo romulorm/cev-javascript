@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Analisador de Números 1.0</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="ex05.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="cabecalho">
+            <h1>Analisador de Números 1.0</h1>
+        </header>
+        <section id="corpo">
+            <div id="entrada">
+                <p><strong>Número (entre 1 e 100):</strong>
+                    <input type="number" name="txtnum" id="txtnum" size="3" min="1" max="100">
+                    <input type="button" value="Adicionar" onclick="adicionar()">
+                </p> 
+                <p><select name="tabela" id="seltab" size="10">
+                </select>
+                </p>
+                <p><input type="button" value="Analisar!" onclick="analisar()"></p>
+            </div>
+            <div id="saida">
+                <p id="dados">Adicione números e clique no botão Analisar! para ver as estatísticas.</p>
+            </div>
+        </section>
+        <footer>
+            <p>© Curso em Vídeo 2019</p>
+        </footer>
+    <script src="ex05.js"></script>
+    </body>
+</html>
