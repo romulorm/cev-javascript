@@ -15,6 +15,8 @@ function adicionar() {
             item.text = `Valor ${numero} adicionado.`
             tabela.appendChild(item)
             numeros.push(numero)
+            f_num.value = ''
+            f_num.focus()
             if (ja_analisado) {
                 res.innerHTML = '';
             }
